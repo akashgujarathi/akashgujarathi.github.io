@@ -1,3 +1,18 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="agujara1@binghamton.edu";
+    $sender=$_POST["name"];
+    $senderEmail=$_POST["email"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $mailBody, "From: $sender <$senderEmail>");
+}
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -157,7 +172,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="" class="button submit" name ="submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -171,7 +186,7 @@
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">agujara1@binghamton.edu</a>
+											<a href="mailto:agujara1@binghamton.edu">agujara1@binghamton.edu</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
