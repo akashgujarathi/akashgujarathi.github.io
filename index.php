@@ -156,7 +156,7 @@ if($_POST["submit"]) {
 						<div class="inner">
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="index.php">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -172,7 +172,7 @@ if($_POST["submit"]) {
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit" name ="submit">Send Message</a></li>
+											<li><a href="#" class="button submit" name ="submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
