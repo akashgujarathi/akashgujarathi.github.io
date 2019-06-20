@@ -1,6 +1,6 @@
 <?php
 
-if($_POST["submit"]) {
+if($_GET["submit"]) {
     $recipient="agujara1@binghamton.edu";
     $sender=$_POST["name"];
     $senderEmail=$_POST["email"];
